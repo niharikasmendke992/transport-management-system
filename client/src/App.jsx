@@ -42,7 +42,7 @@ function App() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/vehicles"
+        "s://transport-management-system-backend-liey.onrender.com"
       );
 
       const data = await response.json();
@@ -103,7 +103,7 @@ function App() {
       if (editId) {
 
         await fetch(
-          `http://localhost:5000/api/vehicles/${editId}`,
+          `://localhost:5000/api/vehicles/${editId}`,
           {
             method: "PUT",
 
@@ -124,7 +124,7 @@ function App() {
       else {
 
         await fetch(
-          "http://localhost:5000/api/vehicles/add",
+          "://localhost:5000/api/vehicles/add",
           {
             method: "POST",
 
@@ -170,7 +170,7 @@ function App() {
     try {
 
       await fetch(
-        `http://localhost:5000/api/vehicles/${id}`,
+        `://localhost:5000/api/vehicles/${id}`,
         {
           method: "DELETE",
         }
